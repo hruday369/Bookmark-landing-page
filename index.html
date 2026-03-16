@@ -12,36 +12,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./tailwind css/output.css">
 </head>
 <body>
-  <nav class="w-[90%] flex items-center justify-between m-12 mt-8 mb-8 ">
-    <div>
-      <img src="./images/logo-bookmark.svg" alt="bookmarks">
-    </div>
-    <ul class="flex gap-10 items-center">
-      <li class="hover:text-[var(--Red400)]">Features</li>
-      <li class="hover:text-[var(--Red400)]">Pricing</li>
-      <li class="hover:text-[var(--Red400)]">Contact</li>
-      <li><button class="bg-[var(--Red400)] px-6 py-0.5 rounded-[4px] text-white border-2 border-transparent hover:border-[var(--Red400)] hover:bg-white hover:text-(--Red400)">Login</button></li>
-    </ul>
-    <!--  <div> -->
-      <!-- <img src="./images/icon-hamburger.svg" alt="icon-hamburger"> -->
-    <!-- </div> --> 
-  </nav>
-<main>
+  <div class="flex justify-center">
+    <nav class="w-[75%] flex items-center justify-between m-12 mt-8 mb-8 ">
+      <div>
+        <img src="./images/logo-bookmark.svg" alt="bookmarks">
+      </div>
+      <ul class="flex gap-10 items-center">
+        <li class="hover:text-[var(--Red400)]">Features</li>
+        <li class="hover:text-[var(--Red400)]">Pricing</li>
+        <li class="hover:text-[var(--Red400)]">Contact</li>
+        <li><button class="orange-btn">Login</button></li>
+      </ul>
+      <!--  <div> -->
+        <!-- <img src="./images/icon-hamburger.svg" alt="icon-hamburger"> -->
+      <!-- </div> --> 
+    </nav>
+  </div>
+<main class="px-25">
 <section class="flex items-center justify-between gap-10">
-   <div class="w-xl` flex flex-col gap-5 ml-40">
+   <div class="w-xl` flex flex-col gap-5 ml-40 shadow-[2px solid grey]">
      <h1 class="text-5xl font-[500]">A Simple Bookmark Manager</h1>
      <p class="text-gray-500 w-md">
        A clean and simple interface to organize your favourite websites. Open a new
        browser tab and see your sites load instantly. Try it for free.
       </p>
       <div class="flex flex-row gap-5">
-        <button class="bg-[var(--Blue600)] px-6 py-3 rounded-[5px] font-[500] text-white border-2 border-transparent hover:border-[var(--Blue600)] hover:bg-white hover:text-(--Blue600)">Get it on Chrome</button>
-        <button class="bg-[var(--Grey50)] px-6 rounded-[5px] font-[500] text-gray-600 border-2 border-transparent hover:border-[var(--Blue950)] hover:bg-white hover:text-(--Blue950)">Get it on Firefox</button>
+        <button class="blue-btn">Get it on Chrome</button>
+        <button class="white-btn">Get it on Firefox</button>
       </div>
     </div>
-    <div class="w-xl normal-img">
+    <div class="min-w-lg normal-img">
       <img src="./images/illustration-hero.svg" alt="hero-section-image">
       <div class="image-bg-left"></div>
     </div>
@@ -59,8 +62,8 @@
           <div class="font-semibold px-6 py-3">Easy Sharing</div>
         </div>
       </div>
-        <section class="flex items-center justify-between gap-5 mt-20 mb-10">
-          <div class="w-md normal-img ml-50">
+        <section class="flex items-center justify-between gap-10 mt-20 mb-10">
+          <div class="min-w-lg normal-img ml-50">
             <img src="./images/illustration-features-tab-1.svg" alt="tab-1">
              <div class="image-bg-right"></div>
          </div>
@@ -71,7 +74,7 @@
               gives you complete control over how you manage your favourite sites.
             </p>
             <div>
-              <button class="text-left bg-[var(--Blue600)] px-6 py-3 rounded-[5px] font-[500] text-white">More Info</button>
+              <button class="blue-btn">More Info</button>
             </div>
           </article>
           <article class="hidden w-xl flex flex-col gap-5">
@@ -81,7 +84,7 @@
               No need to trawl through all of your bookmarks.
             </p>
             <div>
-              <button class="text-left bg-[var(--Blue600)] px-6 py-3 rounded-[5px] font-[500] text-white">More Info</button>
+              <button class="blue-btn">More Info</button>
             </div>
           </article>
           <article class="hidden w-xl flex flex-col gap-5">
@@ -91,7 +94,7 @@
               link that you can send at the click of a button.
             </p>
             <div>
-              <button class="text-left bg-[var(--Blue600)] px-6 py-3 rounded-[5px] font-[500] text-white">More Info</button>
+              <button class="blue-btn">More Info</button>
             </div>
           </article>
         </section>
@@ -113,7 +116,7 @@
           </div>
           <img src="./images/bg-dots.svg" alt="bg-dots" class="w-3xs">
           <div>
-            <button class="text-left bg-[var(--Blue600)] px-6 py-3 rounded-[5px] font-[500] text-white">Add & Install Extension</button>
+            <button class="blue-btn">Add & Install Extension</button>
           </div>
         </div>
         <div class=" mt-25 px-5 py-8 flex flex-col gap-7 items-center border-2 rounded-[10px]">
@@ -124,7 +127,7 @@
           </div>
           <img src="./images/bg-dots.svg" alt="bg-dots" class="w-3xs">
           <div>
-            <button class="text-left bg-[var(--Blue600)] px-6 py-3 rounded-[5px] font-[500] text-white">Add & Install Extension</button>
+            <button class="blue-btn">Add & Install Extension</button>
           </div>
         </div>
         <div class=" mt-45 px-5 py-8 flex flex-col gap-7 items-center border-2 rounded-[10px]">
@@ -135,7 +138,7 @@
           </div>
           <img src="./images/bg-dots.svg" alt="bg-dots" class="w-3xs">
           <div>
-            <button class="text-left bg-[var(--Blue600)] px-6 py-3 rounded-[5px] font-[500] text-white">Add & Install Extension</button>
+            <button class="blue-btn">Add & Install Extension</button>
           </div>
         </div>
     </section>
@@ -227,29 +230,29 @@
     </div>
   </div> 
 
-  <div><button class="text-left bg-[var(--Blue600)] px-6 py-3 rounded-[5px] font-[500] text-white">More Info</button></div>
+  <div><button class="blue-btn">More Info</button></div>
 </section>
 </main>
 
 
 <section class="flex flex-col items-center bg-[var(--Blue600)] py-20 mt-10 gap-5 text-white">
     <p class="uppercase font-semibold text-xs tracking-[5px]">35,000+ already joined</p>
-    <h2 class="font-bold text-3xl w-md text-center">Stay up-to-date with what we’re doing</h2>
+    <h2 class="font-bold text-5xl w-md text-center">Stay up-to-date with what we’re doing</h2>
     <div class="flex items-center gap-3 text-xs">
-      <input type="email" name="mail" id="mail" placeholder="Enter your email address" class="bg-white text-gray-600 p-2 rounded-[5px]">
-        <input type="button" value="Contact Us" class="bg-[var(--Red400)] rounded-[4px] font-semibold p-2 px-3">
+      <input type="email" name="mail" id="mail" placeholder="Enter your email address" class="py-4 bg-white text-gray-600 rounded-[5px] ">
+        <input type="button" value="Contact Us" class="contact-us">
       </div>
   </section>
     <footer class="bg-[var(--Blue950)] text-white flex items-center justify-between p-5 px-10">
       <div class="flex items-center gap-10">
         <div><img src="./images/logo-bookmark-white.svg" alt="illustration-hero"></div>
         <ul class="flex gap-5">
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>Contact</li>
+          <li class="hover:text-[var(--Red400)]"> Features</li>
+          <li class="hover:text-[var(--Red400)]">Pricing</li>
+          <li class="hover:text-[var(--Red400)]">Contact</li>
         </ul>
       </div>
-      <div class="flex gap-5">
+      <div class="flex gap-5 bottom-icons">
         <img src="./images/icon-facebook.svg" alt="icon-facebook">
         <img src="./images/icon-twitter.svg" alt="icon-twitter">
       </div>

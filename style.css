@@ -13,15 +13,15 @@ body{
     max-width: 100%;
 }
 .image-bg-left{
-    position:absolute;
+    position: absolute;
     left: 23.10%;
     bottom: -7%;
     background-color: var(--Blue600);
     padding: 40px;
-    height: 75%;
-    width: 76.90%;
+    height: 84%;
     z-index: -1;
-    border-radius: 0 0 0 40%;
+    min-width: 33.5vw;
+    border-radius: 0 0 0 12rem;
 }
 .image-bg-right{
     position: absolute;
@@ -29,8 +29,14 @@ body{
     bottom: -27%;
     background-color: var(--Blue600);
     height: 95%;
-    width: 125%;
+    min-width: 100vw;
     z-index: -1;
     border-radius: 0 0 7rem 0;
 }
+
+
+.bottom-icons img:hover{
+    filter: brightness(0) saturate(100%) invert(47%) sepia(76%) saturate(1355%) hue-rotate(326deg) brightness(101%) contrast(96%);
+}
+
 

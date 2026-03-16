@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom reusable styles */
+.blue-btn {
+  @apply bg-[var(--Blue600)] px-6 py-3 rounded-[5px] font-[500] text-white
+            border-2 border-transparent hover:border-[var(--Blue600)] hover:bg-white hover:text-[var(--Blue600)];
+}
+
+.white-btn {
+  @apply bg-[var(--Grey50)] px-6 rounded-[5px] font-[500] text-gray-600
+            border-2 border-transparent hover:border-[var(--Blue950)] hover:bg-white hover:text-[var(--Blue950)];
+}
+
+.orange-btn {
+  @apply bg-[var(--Red400)] px-6 py-0.5 rounded-[4px] text-white 
+          border-2 border-transparent hover:border-[var(--Red400)] hover:bg-white hover:text-[var(--Red400)];
+}
+
+.contact-us{
+  @apply bg-[var(--Red400)] px-3 py-2 rounded-[4px] text-white 
+          border-2 border-transparent hover:border-[var(--Red400)] hover:bg-white hover:text-[var(--Red400)];
+}
